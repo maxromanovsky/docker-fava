@@ -3,8 +3,8 @@ name: Docker Image (latest) CI
 on:
   push:
     branches: [ master ]
-  pull_request:
-    branches: [ master ]
+    paths-ignore:
+      - '*.md'
 
 jobs:
 
@@ -45,3 +45,8 @@ jobs:
           --output "type=image,push=true" \
           --file ./Dockerfile . \
           --tag ${DOCKER_USERNAME}/fava:latest
+
+      - name: Send Slack Notification
+        uses: rtCamp/action-slack-notify@v2.0.1
+        env:
+          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}

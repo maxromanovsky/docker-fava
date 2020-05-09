@@ -28,3 +28,9 @@ docker buildx create --name multiarch --use
 export FAVA_VERSION=1.14
 docker buildx build --platform linux/amd64,linux/arm/v7 --build-arg VERSION=$FAVA_VERSION -t maxromanovsky/fava:${FAVA_VERSION} --push .
 ```
+
+## Repository secrets
+
+- DOCKER_PASSWORD
+- DOCKER_USERNAME
+- SLACK_WEBHOOK
