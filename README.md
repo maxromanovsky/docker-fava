@@ -1,9 +1,13 @@
 # Multi-arch Docker image builder for [beancount/fava](https://github.com/beancount/fava)
 
 [![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/maxromanovsky/docker-fava)](https://github.com/maxromanovsky/docker-fava)
-[![Docker Image Version (latest semver)](https://img.shields.io/docker/v/maxromanovsky/fava)](https://hub.docker.com/r/maxromanovsky/node-fava)
+[![Docker Image Version (latest semver)](https://img.shields.io/docker/v/maxromanovsky/fava)](https://hub.docker.com/r/maxromanovsky/fava)
 ![Docker Image (latest) CI](https://github.com/maxromanovsky/docker-fava/workflows/Docker%20Image%20(latest)%20CI/badge.svg)
 ![Docker Image (release) CI](https://github.com/maxromanovsky/docker-fava/workflows/Docker%20Image%20(release)%20CI/badge.svg)
+
+## How to release
+- https://github.com/beancount/fava/releases/
+- Create & push a new tag to repo :)
 
 ## Configuration
 
